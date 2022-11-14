@@ -82,10 +82,11 @@ contract Token {
 		public
 		returns (bool success)
 	{
+		//console.log(_from, _to, _value);
 		//require sufficient funds
-		require(_value <= balanceOf[_from]);
+		require(_value <= balanceOf[_from], 'insufficient balance');
 		//check approval for transfer value specified
-		require(_value <= allowance[_from][msg.sender]);
+		require(_value <= allowance[_from][msg.sender], 'insufficient allowance');
 
 		//reset allowance to prevent double spending
 		allowance[_from][msg.sender] = allowance[_from][msg.sender] - _value;
