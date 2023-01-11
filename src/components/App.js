@@ -7,11 +7,16 @@ import {
   loadNetwork,
   loadAccount,
   loadTokens,
-  loadExchange
+  loadExchange,
+  subscribeToEvents
 } from '../store/interactions';
 
-function App() {
+import Navbar from './Navbar'
+import Markets from './Markets'
+import Balance from './Balance'
 
+
+function App() {
     const dispatch = useDispatch()
 
     //create javascript function to talk to metamask using RPC call (pull account)
@@ -23,8 +28,15 @@ function App() {
         //fetch current network's chainId (e.g., hardhat: 31337, kovan: 42)
         const chainId = await loadNetwork(provider, dispatch) //chainId is inherited from provider object
 
-        //fetch current account and balance from metamask
-        await loadAccount(provider, dispatch)
+        //reload page when network changes
+        window.ethereum.on('chainChanged', () => {
+          window.location.reload()
+        })
+
+        //fetch current account and balance from MetaMask using event to reload account when changed
+        window.ethereum.on('accountsChanged', () => {
+          loadAccount(provider, dispatch)
+        })
 
         //load token smart contract
         const botany = config[chainId].botany
@@ -33,7 +45,10 @@ function App() {
 
         //load exchange smart contract
         const exchangeConfig = config[chainId].exchange
-        await loadExchange(provider, exchangeConfig.address, dispatch)
+        const exchange = await loadExchange(provider, exchangeConfig.address, dispatch)
+
+        //listen to events
+        subscribeToEvents(exchange, dispatch)
     }
 
     useEffect(() => {
@@ -43,14 +58,14 @@ function App() {
     return (
         <div>
 
-      {/* Navbar */}
+      <Navbar />
 
       <main className='exchange grid'>
         <section className='exchange__section--left grid'>
 
-          {/* Markets */}
+          <Markets />
 
-          {/* Balance */}
+          <Balance />
 
           {/* Order */}
 
