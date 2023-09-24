@@ -142,8 +142,8 @@ If you have any inquiries, don't hesitate to reach out to me via socials or by s
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/mdyeates/my-portfolio.svg?style=for-the-badge
-[contributors-url]: https://github.com/mdyeates/my-portfolio/graphs/contributors
+[contributors-shield]: https://img.shields.io/badge/CONTRIBUTORS-1-red
+[contributors-url]: https://github.com/mdyeates/web3-token-exchange/graphs/contributors
 [license-shield]: https://img.shields.io/badge/LICENSE-CC-blue
 [license-url]: http://creativecommons.org/licenses/by-nc-nd/4.0/
 [issues-shield]: https://img.shields.io/badge/ISSUES-REPORT-green

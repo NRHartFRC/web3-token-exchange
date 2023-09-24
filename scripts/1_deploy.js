@@ -25,7 +25,7 @@ async function main() {
   await mDAI.deployed()
   console.log(`mDAI Deployed to: ${mDAI.address}`)
 
-  //deployed exchange with pre-set fees
+  //deployed exchange with pre-set fee structure
   const exchange = await Exchange.deploy(accounts[1].address, 10) // 10% fee account
   await exchange.deployed()
   console.log(`Exchange Deployed to: ${exchange.address}`)

@@ -1,3 +1,5 @@
+// Add more networks for production deployment
+
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 

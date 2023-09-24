@@ -1,3 +1,5 @@
+// Test script to ensure proper functionality
+
 const { expect } = require('chai')
 const { ethers } = require('hardhat')
 
