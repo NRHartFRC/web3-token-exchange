@@ -1,150 +1,153 @@
-# Sample Hardhat Project
+<a name="readme-top"></a>
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+[![Contributors][contributors-shield]][contributors-url]
+[![CC License][license-shield]][license-url]
+[![Issues][issues-shield]][issues-url]
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
-Try running some of the following tasks:
+# Web3 ERC-20 Exchange
 
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+<!-- WELCOME -->
 
-# reference 25. PriceChart video, 20 min
-## get order book generated from seed exchange script
-start from scratch
-1. npx hardhat node
-2. new tap
-   1. npx hardhat run --network localhost scripts/1_deploy.js
-   2. npx hardhat run --network localhost scripts/2_seed_exchange.js
-3. new tap
-   1. npm run start
-4. PriceChart.js
-5. PriceChart.config.js
-6. Selectors.js
-7. App.js
+  <div align="center">
+    <a href="https://github.com/nrhartfrc/web3-token-exchange">
+      <img src="src/assets/manuka.png" alt="Logo" width="200" height="200">
+    </a>
+    <h1 align="center">Botany Token Exchange</h1>
+    <p align="center">
+    <br/>
+    Delivering decentralization to your personal finances.<br/>
+      <br/>
+      Author: Nicholas Rombach
+      <br/>
+      <br/>
+      <a href="https://github.com/mdyeates/web3-token-exchange"><strong>Explore the docs »</strong></a>
+      <br/>
+      <br/>
+      <a href="https://michaelyeates.co.uk">View Live Website</a>
+      ·
+      <a href="https://github.com/mdyeates/web3-token-exchange/issues">Report Bug</a>
+      ·
+      <a href="https://github.com/mdyeates/web3-token-exchange/issues">Request Feature</a>
+    </p>
+  </div>
 
-# on 26. Trades
-1. sort orders oldest first
-2. apply colors
-3. sort by date decending for UI
-4. Trades.js, selectors.js
+<!-- TABLE OF CONTENTS -->
 
-# 27. My orders
-1. selectors new functions
-2. Transactions.js
+  <details>
+    <summary>Table of Contents</summary>
+    <ol>
+      <li>
+        <a href="#in-a-nutshell">In-a-Nutshell</a>
+        <ul>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#requirements">Requirements</a></li>
+          <li><a href="#use">Use</a></li>
+          <li><a href="#features">Features</a></li>
+        </ul>
+      </li>
+      <li>
+          <a href="#getting-started">Getting Started</a>
+        <ul>
+          <li><a href="#prerequisites">Prerequisites</a></li>
+          <li><a href="#tutorial">Installation</a></li>
+        </ul>
+      </li>
+      <li><a href="#legal">Legal</a></li>
+      <li><a href="#license">License</a></li>
+    </ol>
+  </details>
 
+<!-- IN-A-NUTSHELL -->
 
-# 28. My Transactions
-1. Transactions.js
-2. selectors.js
+### **In-a-nutshell:**
+This decentralized exchange is a digital web3 platform that allows you to deposit, withdraw, exchange, swap and trade ERC-20 tokens on permissionless, EVM-compatible blockchains. This decentralized app (dApp) can be configured to work with any blockchain that is compatibile with running on the Ethereum Virtual Machine (EVM). What does that mean? This DeFi dApp allows users to trade any token that follows the ERC-20 standard. This exchange is non-custodial, and trustless solution to managing your cryptocurrency transactions. Use this dApp to trade for lower fees than other competing web3 platforms!
 
-# 29. Cancel orders
-1. Transactions
-2. interactions.js
-3. reducers.js
+<!-- REQUIREMENTS -->
 
-cancel event emitted by Exchange.sol
-we want to SubscribeToEvents to Cancel the order (dispatched to reducer)
+## **Requirements**
+- cryptocurrency wallet (e.g., MetaMask)
+- reserves on your wallet
+- stable internet connection
 
-add this in DEFAULT_EXCHANGE_STATE
-cancelledOrders: {
-        data: []
-    },
+<p align="right"><a href="#readme-top">back to top</a></p>
 
-# 30. Fill Orders
-1. relaunch hardhat blockchain, migrate deployment and seed scripts, npm run start on separate taps
-2. reset METAMASK: 
-   1. HardHat #0, menu > settings > advanced > Clear activity tab data (resets account)
-   2. HardHat #1, menu > settings > advanced > Clear activity tab data (resets account)
-   3. Return back to HardHat #0 account
+<!-- USE -->
 
-Note:
-1. video shows a red candle when this happens on the minute scale (x-axis)
-2. HardHat #0 has all of the sell orders
-3. HardHat #1 has all the buy orders
-4. HartHat#0 click on buy orders (do not want to fill own orders)
+## **Use**
+1. connect your wallet using the `'Connect'` button on the UI
+2. select the `Market` you want to trade
+3. `Deposit` and `Withdraw` tokens to-and-from the exchange by entering and confirming an amount
+4. create `New Orders` for buying and selling with an amount and price
+5. `Cancel` orders from 'My Orders' section that you do not want to be placed
+6. `Fill Orders` in the order book by clicking the specific buy or sell order
+7. view price history by hovering over the candlestick in the `Price Chart`
+8. click the `alert` to dismiss the message
 
-Orderbook.js // let people click on orders to fill them
-Need to wire up handlers for each order on the page
-Apply click handler to each order
-Selling
-- new onClick handler... onClick={() => fillOrderHandler(order)}
-Buying
-- new onClick handler for buy orders... onClick={() => fillOrderHandler(order)}
+<p align="right"><a href="#readme-top">back to top</a></p>
 
-const fillOrderHandler = (order) => {
-      console.log('fillOrderHandler', order)
-      // fillOrder(provider, exchange, order, dispatch)
-    }
+<!-- FEATURES -->
 
-create a function that fills order using an interaction (similar to Cancel)
-dispatches action to redux store
-when filled we subscribe to an event
-lets the client application know it is filled
-get out the redux state, UI updates automatically
+## **Features**
+1. **Connect:** Connect your wallet to the UI using the Connect button, then choose the account you want to use
+2. **Market:** Select the market you want with the desired trading pair
+3. **Deposit:** Deposit reserves onto the exchange using the Balance section
+4. **Withdraw:** Deposit reserves onto the exchange using the Balance section
+5. **New Orders:** Create new orders for both buying and selling
+6. **Cancel Orders:** Cancel orders from the My Trades section
+7. **View Trades:** View real trades in the Trades section
+8. **Fill Orders:** Filler orders by clicking the desired order from the Order Book section
+9. **Price Chart:** View a candlestick chart to see price history in action
 
-Interacts with Exchange.sol
-- emits Trade event if successful
+<p align="right"><a href="#readme-top">back to top</a></p>
 
-Interactions
-- subscribe to event, trade event
+<!-- LEGAL -->
 
-Reducers
-- handle cases ORDER_FILL_REQUEST, ORDER_FILL_SUCCESS, ORDER_FILL_FAIL
-- data may not exist in ORDER_FILL_SUCCESS, update default state in reducer DEFAULT_EXCHANGE_STATE
-- Add this: 
-  cancelledOrders: {
-        data: []
-    },
-    filledOrders: {
-        data: []
-    },
+## **Legal**
+As of 2023, the US government has regulated the cryptocurrency market. Regulations include, but are not limited to:
+- Know-Your-Customer (KYC): Refers to the dApp's obligation to confirm identity and background checks of it's users
+- Anti-Money Laundering (AML): Refers to regulation for crime prevention
 
-- import OrderBook function
-- useDispatch
-- provider
-- exchange
+<p align="right"><a href="#readme-top">back to top</a></p>
 
-We are filling a buy order (we are selling!)
+## Getting Started
 
-# 31. Transaction status
-links out transaction hash to public block explorer (after deployment)
-check it on etherscan, localhost will be on same page
+To begin trading, follow the simple steps.
 
-Pluck the events to and from redux store, launch alert
+### Prerequisites
 
-Teardown exercise
-1. HardHat
-2. Scripts
-3. Web Server
-4. Accounts (HardHat #0, HardHat #1)
-   
-import Alert into App.js
+- Install MetaMask
+  ```sh
+  https://metamask.io/download/
+  ```
+- MetaMask Tutorial
+  ```sh
+  https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask
+  ```
+<p align="right"><a href="#readme-top">back to top</a></p>
 
-Typo in TRANSACTION_REQUEST reducer transnaction
+<!-- LICENSE -->
 
-in selectors: const events = state => get(state, 'exchange.events')
+## License
+  
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
 
-Custom selector for MyEventsSelector
+<p align="right"><a href="#readme-top">back to top</a></p>
+  
+<!-- QUESTIONS
+  
+## Questions
 
-import into Alerts
+If you have any inquiries, don't hesitate to reach out to me via socials or by sending an email to <a href="mailto:michael-yeates@outlook.com">michael-yeates@outlook.com</a> -->
 
-The [0] index is the latest
-- most recent event is first, see reducers.js, TRANSFER_SUCCESS
+<!-- MARKDOWN LINKS & IMAGES -->
 
-using config.json for dynamic block explorer feature
+[contributors-shield]: https://img.shields.io/github/contributors/mdyeates/my-portfolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/mdyeates/my-portfolio/graphs/contributors
+[license-shield]: https://img.shields.io/badge/LICENSE-CC-blue
+[license-url]: http://creativecommons.org/licenses/by-nc-nd/4.0/
+[issues-shield]: https://img.shields.io/badge/ISSUES-REPORT-green
+[issues-url]: https://github.com/nrhartfrc/web3-token-exchange/issues
+<!-- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/nicholasrombach -->
 
-transaction hash only works when deployed
-
-CHECK FOR LINTER ERRORS!
-
-# 32. Deployment
-
-
-
-# Apexcharts.JS
-https://apexcharts.com
-already saved in package.json

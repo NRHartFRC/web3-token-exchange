@@ -592,6 +592,8 @@ table td {
 	height: 100px;
 	width: 300px;
 
+	border-radius: 4em;
+
 	position: fixed;
 	bottom: 1.50em;
 	right: 1.50em;
@@ -800,3 +802,4 @@ table td {
 		grid-column-end: 5;
 	}
 }
+  
