@@ -3,7 +3,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![CC License][license-shield]][license-url]
 [![Issues][issues-shield]][issues-url]
-<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 # Web3 ERC-20 Exchange
 
@@ -16,19 +16,20 @@
     <h1 align="center">Botany Token Exchange</h1>
     <p align="center">
     <br/>
-    Delivering decentralization to your personal finances.<br/>
+    <em>Offering decentralization for your personal finances.</em><br/>
+    <em>Explore <strong>modern</strong> financial instruments.</em><br/>
       <br/>
       Author: Nicholas Rombach
       <br/>
       <br/>
-      <a href="https://github.com/mdyeates/web3-token-exchange"><strong>Explore the docs »</strong></a>
+      <a href="https://github.com/nrhartfrc/web3-token-exchange/"><strong>Explore the docs »</strong></a>
       <br/>
       <br/>
-      <a href="https://michaelyeates.co.uk">View Live Website</a>
+      <a href="#">View Live Website</a>
       ·
-      <a href="https://github.com/mdyeates/web3-token-exchange/issues">Report Bug</a>
+      <a href="https://github.com/nrhartfrc/web3-token-exchange/issues">Report Bug</a>
       ·
-      <a href="https://github.com/mdyeates/web3-token-exchange/issues">Request Feature</a>
+      <a href="https://github.com/nrhartfrc/web3-token-exchange/issues">Request Feature</a>
     </p>
   </div>
 
@@ -104,15 +105,15 @@ This decentralized exchange is a digital web3 platform that allows you to deposi
 <!-- LEGAL -->
 
 ## **Legal**
-As of 2023, the US government has regulated the cryptocurrency market. Regulations include, but are not limited to:
-- Know-Your-Customer (KYC): Refers to the dApp's obligation to confirm identity and background checks of it's users
+As of 2023, the US federal government and the Securities Exchange Commision (SEC) has regulated the cryptocurrency market. Regulations include, but are not limited to:
+- Know Your Customer (KYC): Refers to the dApp's obligation to confirm identity and background checks of it's users
 - Anti-Money Laundering (AML): Refers to regulation for crime prevention
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 ## Getting Started
 
-To begin trading, follow the simple steps.
+To begin trading, follow these simple steps to get started today!
 
 ### Prerequisites
 
@@ -134,12 +135,6 @@ To begin trading, follow the simple steps.
 
 <p align="right"><a href="#readme-top">back to top</a></p>
   
-<!-- QUESTIONS
-  
-## Questions
-
-If you have any inquiries, don't hesitate to reach out to me via socials or by sending an email to <a href="mailto:michael-yeates@outlook.com">michael-yeates@outlook.com</a> -->
-
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [contributors-shield]: https://img.shields.io/badge/CONTRIBUTORS-1-red
@@ -148,6 +143,5 @@ If you have any inquiries, don't hesitate to reach out to me via socials or by s
 [license-url]: http://creativecommons.org/licenses/by-nc-nd/4.0/
 [issues-shield]: https://img.shields.io/badge/ISSUES-REPORT-green
 [issues-url]: https://github.com/nrhartfrc/web3-token-exchange/issues
-<!-- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/nicholasrombach -->
-
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/nicholasrombach
