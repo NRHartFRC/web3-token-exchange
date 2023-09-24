@@ -13,7 +13,7 @@
     <a href="https://github.com/nrhartfrc/web3-token-exchange">
       <img src="src/assets/manuka.png" alt="Logo" width="200" height="200">
     </a>
-    <h1 align="center" style="color: gold !important;">Botany Token Exchange</h1>
+    <h1 align="center">Botany Token Exchange</h1>
     <p align="center">
     <br/>
     <em>Offering decentralization for your personal finances.</em><br/>
