@@ -31,17 +31,17 @@
       ·
       <a href="https://github.com/nrhartfrc/web3-token-exchange/issues">Request Feature</a>
     </p>
+    <img src="src/assets/tokenexchange.png" alt="Logo">
   </div>
 
 <!-- TABLE OF CONTENTS -->
 
   <details>
-    <summary>Table of Contents</summary>
+    <summary><b>Table of Contents</b></summary>
     <ol>
       <li>
         <a href="#in-a-nutshell">In-a-Nutshell</a>
         <ul>
-          <li><a href="#photos">Photos</a></li>
           <li><a href="#requirements">Requirements</a></li>
           <li><a href="#use">Use</a></li>
           <li><a href="#features">Features</a></li>
@@ -54,10 +54,11 @@
           <li><a href="#tutorial">Installation</a></li>
         </ul>
       </li>
+      <li><a href="#future">Future</a></li>
       <li><a href="#legal">Legal</a></li>
       <li><a href="#license">License</a></li>
     </ol>
-  </details>
+  </details><br>
 
 <!-- IN-A-NUTSHELL -->
 
@@ -125,6 +126,16 @@ To begin trading, follow these simple steps to get started today!
   ```sh
   https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask
   ```
+<p align="right"><a href="#readme-top">back to top</a></p>
+
+<!-- FUTURE-->
+
+## Future
+1. KYC and AML compliance
+2. Add depth chart feature
+3. More photos
+4. Include NFT (ERC-721) standard
+
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- LICENSE -->
