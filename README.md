@@ -31,7 +31,7 @@
       ·
       <a href="https://github.com/nrhartfrc/web3-token-exchange/issues">Request Feature</a>
     </p>
-    <img src="src/assets/tokenexchange.png" alt="Logo">
+    <img src="src/assets/tokenexchange.png" alt="Exchange">
   </div>
 
 <!-- TABLE OF CONTENTS -->
